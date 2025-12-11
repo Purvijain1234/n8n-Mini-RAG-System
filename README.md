@@ -7,6 +7,10 @@ This workflow allows you to upload files from Google Drive, split and embed the 
 
 ## Workflow
 
+<img width="1432" height="519" alt="Image" src="https://github.com/user-attachments/assets/4ab02357-abfd-4efc-bc56-2c9ea8d6b0ee" />
+
+---
+
 ## Features
 - Fetch documents from Google Drive
 - Chunk text using a recursive text splitter
