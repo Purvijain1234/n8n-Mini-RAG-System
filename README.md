@@ -1,11 +1,13 @@
-# 📄 n8n Simple RAG Model (Retrieval-Augmented Generation)
+# 📄 n8n Mini RAG Model (Retrieval-Augmented Generation)
 
-A lightweight RAG system built completely inside **n8n**.  
+A minimal and efficient RAG pipeline created in **n8n** that embeds documents, stores vector data, and generates responses using relevant context from user files.
 This workflow allows you to upload files from Google Drive, split and embed the content using HuggingFace embeddings, store vectors in **Pinecone**, and answer questions using **Google Gemini** with retrieved context.
 
 ---
 
-## 🚀 Features
+## Workflow
+
+## Features
 - Fetch documents from Google Drive
 - Chunk text using a recursive text splitter
 - Generate embeddings with HuggingFace
@@ -17,7 +19,7 @@ This workflow allows you to upload files from Google Drive, split and embed the 
 
 ---
 
-## 🧩 Workflow Overview
+## Workflow Overview
 
 ### **1. RAG (Document Ingestion Pipeline)**
 This workflow runs when you click *Execute Workflow*.
@@ -50,7 +52,7 @@ Steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/n8n-simple-rag.git
+git clone https://github.com/Purvijain1234/n8n-mini-rag-system.git
 ```
 ## 2. Set up n8n
 Install n8n locally or use n8n Cloud.  
@@ -101,23 +103,6 @@ All changes can be made directly inside n8n.
 
 ---
 
-## 🖼️ Workflow Diagram  
-*(Based on your screenshot)*
-
-### 📥 RAG Pipeline
-Execute → Search Files → Download File → Data Loader → Text Splitter → Embeddings → Pinecone Vector Store
-
-shell
-Copy code
-
-### 💬 Answer Pipeline
-Chat Trigger → AI Agent → (Memory + Pinecone Vector Query) → Gemini Model → Answer
-
-yaml
-Copy code
-
----
-
 ## 📚 Tech Stack
 - n8n (Workflow Automation)  
 - HuggingFace Embeddings  
@@ -136,11 +121,22 @@ Copy code
 
 ---
 
-## 📝 License
-MIT License
+## Contributing
+
+Contributions, suggestions, and bug reports are welcome. Open a GitHub issue or submit a pull request with clear description and reproduction steps.
 
 ---
 
-## 👩‍💻 Author
-**Purvi Jain**  
-LinkedIn: https://www.linkedin.com/in/purvi-jain-315683326
+## License
+
+This project is released under the MIT License. See `LICENSE` for details.
+
+---
+
+## Contact
+
+Project owner: Purvi Jain
+LinkedIn: [https://www.linkedin.com/in/purvi-jain-315683326](https://www.linkedin.com/in/purvi-jain-315683326)
+
+---
+
