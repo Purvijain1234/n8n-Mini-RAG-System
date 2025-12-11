@@ -52,97 +52,95 @@ Steps:
 ```bash
 git clone https://github.com/your-username/n8n-simple-rag.git
 ```
-2. Set up n8n
-Install n8n locally or use n8n Cloud.
-
+## 2. Set up n8n
+Install n8n locally or use n8n Cloud.  
 Installation guide: https://docs.n8n.io/hosting/installation/
 
-3. Import Workflow(s)
-Import the RAG and Answer workflows from the /workflows/ folder.
+---
+
+## 3. Import Workflow(s)
+Import the **RAG** and **Answer** workflows from the `/workflows/` folder.
 
 Includes:
+- Google Drive search & download  
+- Document loader  
+- Text splitter  
+- HuggingFace embeddings  
+- Pinecone vector store  
+- Gemini chat model answering pipeline  
 
-Google Drive search & download
+---
 
-Document loader
-
-Text splitter
-
-HuggingFace embeddings
-
-Pinecone vector store
-
-Gemini chat model answering pipeline
-
-4. Configure Credentials
+## 4. Configure Credentials
 Inside n8n, add:
-
-Google Drive Credential
-
-Pinecone API Key
-
-HuggingFace Embedding Model
-
-Google Gemini API Key
+- Google Drive Credential  
+- Pinecone API Key  
+- HuggingFace Embedding Model  
+- Google Gemini API Key  
 
 Make sure to connect them to each node.
 
-5. Customize the Workflow
+---
+
+## 5. Customize the Workflow
 You can modify:
-
-Chunk size in text splitter
-
-Embedding model
-
-Pinecone index name
-
-Gemini prompt instructions
+- Chunk size in text splitter  
+- Embedding model  
+- Pinecone index name  
+- Gemini prompt instructions  
 
 All changes can be made directly inside n8n.
 
-6. Run the Workflow
-Run RAG workflow manually to ingest documents
+---
 
-Use chat trigger to ask questions
+## 6. Run the Workflow
+- Run **RAG workflow** manually to ingest documents  
+- Use **chat trigger** to ask questions  
+**OR**  
+- Connect it to WhatsApp/Telegram API  
 
-OR connect it to WhatsApp/Telegram API
+---
 
-🖼️ Workflow Diagram
-(Based on your screenshot)
+## 🖼️ Workflow Diagram  
+*(Based on your screenshot)*
 
-📥 RAG Pipeline
-pgsql
-Copy code
+### 📥 RAG Pipeline
 Execute → Search Files → Download File → Data Loader → Text Splitter → Embeddings → Pinecone Vector Store
-💬 Answer Pipeline
-mathematica
+
+shell
 Copy code
+
+### 💬 Answer Pipeline
 Chat Trigger → AI Agent → (Memory + Pinecone Vector Query) → Gemini Model → Answer
-📚 Tech Stack
-n8n (Workflow Automation)
 
-HuggingFace Embeddings
+yaml
+Copy code
 
-Recursive Text Splitter
+---
 
-Pinecone Vector DB
+## 📚 Tech Stack
+- n8n (Workflow Automation)  
+- HuggingFace Embeddings  
+- Recursive Text Splitter  
+- Pinecone Vector DB  
+- Google Gemini Chat Model  
 
-Google Gemini Chat Model
+---
 
-📌 Use Cases
-Personal knowledge base
+## 📌 Use Cases
+- Personal knowledge base  
+- FAQ bot  
+- Document question-answering  
+- Automated note search  
+- Project-specific AI assistant  
 
-FAQ bot
+---
 
-Document question-answering
-
-Automated note search
-
-Project-specific AI assistant
-
-📝 License
+## 📝 License
 MIT License
 
-👩‍💻 Author
-Purvi Jain
+---
+
+## 👩‍💻 Author
+**Purvi Jain**  
 LinkedIn: https://www.linkedin.com/in/purvi-jain-315683326
