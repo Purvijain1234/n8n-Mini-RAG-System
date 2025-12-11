@@ -51,6 +51,7 @@ Steps:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/n8n-simple-rag.git
+```
 2. Set up n8n
 Install n8n locally or use n8n Cloud.
 
